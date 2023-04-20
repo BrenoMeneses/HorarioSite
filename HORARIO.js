@@ -15,6 +15,7 @@ class Horario{
         return new Date().getSeconds()
     }
 }
+
 var horario = new Horario()
 
 setInterval(() => {
@@ -51,4 +52,4 @@ setInterval(() => {
                 window.document.getElementById('centro').style.boxShadow = '2px 2px 3px rgb(26, 26, 26)'
                 window.document.getElementById('AvisoDohorario').innerHTML = 'Boa Noite!!'
             }
-})
+}, 1000)
